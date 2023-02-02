@@ -9,17 +9,14 @@ import techproed.utilities.Driver;
 
 
 public class Day21_TechproLoginTest {
-    @Test
-    public void loginTest() {
+    @Test(groups = "regression-tests")
+    public void loginTest(){
         TechproLoginPage techproLoginPage = new TechproLoginPage();
         TechproHomePage techproHomePage = new TechproHomePage();
-
         Driver.getDriver().get(ConfigReader.getProperty("techpro_test_url"));
-
         techproLoginPage.username.sendKeys(ConfigReader.getProperty("techpro_test_username"));
         techproLoginPage.password.sendKeys(ConfigReader.getProperty("techpro_test_password"));
         techproLoginPage.submitButton.click();
-
 //      ASSERTION
 //        Login yapildi. Driver su an Home Pagede
         Assert.assertTrue(techproHomePage.homeHeader.isDisplayed());
@@ -27,8 +24,8 @@ public class Day21_TechproLoginTest {
         techproHomePage.homeLogoutButton.click();
 //        Cikis olduguna dair assertion yap
         Assert.assertTrue(techproLoginPage.submitButton.isDisplayed());
-
 //        Driver i kapat
         Driver.closeDriver();
     }
 }
+
