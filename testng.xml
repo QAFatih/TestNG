@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/LENOVO/B103TestNGProject/src/test/java/techproed/tests/SmokeTest">
+        <classes>
+            <class name="techproed.tests.SmokeTest.Day22_NegativeLoginTest">
+                <methods>
+                    <include name="US100208_Negative_Login"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.SmokeTest.Day22_PositiveLoginTest">
+                <methods>
+                    <include name="US100201_Admin_Login"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--<suite name="All Test Suite">-->
+<!--    <test verbose="2" preserve-order="true"-->
+<!--          name="/Users/techproed/IdeaProjects/B103TestNGProject/src/test/java/techproed/tests/smoketests">-->
+
+<!--        <packages>-->
+<!--            &lt;!&ndash;            NOT: name gecerli bir klasor ismi olmali.-->
+<!--                                 klasorun PATH i root dosyasindan (techproed) baslamali-->
+<!--                            NOT: KAYDET. SAVE. &ndash;&gt;-->
+<!--            <package name="techproed.tests.dataprovider"></package>-->
+<!--            <package name="techproed.tests.smoketests"></package>-->
+<!--        </packages>-->
+
+<!--    </test>-->
+<!--</suite>-->
